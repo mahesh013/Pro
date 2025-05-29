@@ -1,0 +1,182 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    ,
+    
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
+      ],
+      "responses": [
+        "We sell coffee and tea",
+        "We have coffee and tea"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "laptop_security",
+      "patterns": [
+        "How should I secure my laptop?",
+        "What are the laptop security guidelines?",
+        "How can I prevent laptop theft?",
+        "What should I do to protect my laptop?"
+      ],
+      "responses": [
+        "Company laptops must be secured at all times to prevent loss of the computer and sensitive information.",
+        "Report the loss of any laptop immediately to the IT department to reset all passwords and notify HR/Admin.",
+        "Each laptop owner is responsible for taking appropriate measures to protect their laptop.",
+        "Here are some suggestions to reduce the chances of theft, damage, or disclosure:",
+        "- Laptop computers should not be left in an unsecured office or on a desktop when leaving work. Take it with you or secure it in a lockable office or drawer.",
+        "- When going through airport security, place your laptop on the x-ray belt just before stepping through. Do not allow others to cut ahead.",
+        "- Keep your laptop out of sight inside a vehicle; store it in the trunk when unattended.",
+        "- Carry your laptop with you when checking into a hotel. Do not leave it in your room in plain sight; store it in a drawer or take it with you.",
+        "- Always be aware of the location of your laptop.",
+        "- Routinely back up critical data files to a network drive or backup device."
+      ]
+    },
+    {
+      "tag": "password_policy",
+      "patterns": [
+        "What are the password policy requirements?",
+        "What is the minimum password length?",
+        "How often do I need to change my password?",
+        "What is the account lockout threshold?",
+        "What happens after too many invalid login attempts?",
+        "What is the password history requirement?",
+        "When should default accounts be deleted or renamed?"
+      ],
+      "responses": [
+        "All domains must adhere to the following account policy settings:",
+        "- Minimum Password Length: 6 characters",
+        "- Maximum Password Age: 90 days",
+        "- Minimum Password Age: 1 day",
+        "- Enforce Password History: 4 passwords",
+        "- Account Lockout Threshold: 3 invalid login attempts",
+        "- Reset Account Lockout Counter after 30 minutes",
+        "- Account Lockout Duration: 30 minutes",
+        "Default accounts in the domain must be deleted or renamed before the first system is placed into production."
+      ]
+    },
+    {
+      "tag": "user_identification_password_guidelines",
+      "patterns": [
+        "What are the password standards?",
+        "How should passwords be managed?",
+        "What are the rules for user IDs?",
+        "How often should passwords be changed?",
+        "Can users change their own passwords?",
+        "What happens if I forget my password?",
+        "How are password resets handled?",
+        "What should I do if my user ID is compromised?",
+        "When should user IDs be disabled or removed?",
+        "What are the rules for transmitting passwords?",
+        "How is access managed during employee changes?"
+      ],
+      "responses": [
+        "Here are the user identification and password guidelines:",
+        "- Computerized systems should allow users to change their own passwords.",
+        "- Password standards include:",
+        "  - Minimum length of 6 characters.",
+        "  - Password change every 90 days.",
+        "  - Must include three of these four character types: upper-case alphabetic, lower-case alphabetic, numeric, or special characters ($! %*).",
+        "  - Must not be the same as user ID, displayed in clear text, or stored in unencrypted format.",
+        "  - Must not be printed on system reports or easily guessable.",
+        "  - Must not be 'Guest', 'Secret', 'Password', or dictionary words.",
+        "- User IDs and passwords must not be transmitted in clear text for GROZ systems accessible via non-GROZ networks.",
+        "- Network and System Administrators should not have access to user passwords.",
+        "- Positive verification is required for all password resets.",
+        "- Users cannot reuse a password within 6 cycles of changing it.",
+        "- User IDs must be disabled after 6 unsuccessful access attempts or for illegal activity.",
+        "- User IDs and passwords must not be hard coded or embedded into software.",
+        "- Users must be notified of the last time their user ID was used, and discrepancies should be reported.",
+        "- Access to computer resources must be canceled upon termination or change in employment status.",
+        "- Procedures to bypass identification and verification routines are not permitted.",
+        "- Security administrators must not provide unapproved access; access must be granted by the data owner or supervisor."
+      ]
+    },
+    {
+      "tag": "virus_protection_rules",
+      "patterns": [
+        "What are the virus protection rules?",
+        "Can you list the virus protection guidelines?",
+        "Tell me the rules for virus protection",
+        "What are the anti-virus guidelines?"
+      ],
+      "responses": [
+        "Here are the virus protection rules:\n\n",
+        "a. Licensed anti-virus software must be installed and operational on all stand-alone or networked computer systems.\n",
+        "b. Anti-virus software pattern files must be kept current. The pattern files must be updated within one day after release of a new virus definition file being made available from the anti-virus software manufacturer.\n",
+        "c. All anti-virus reports will be reviewed on a monthly basis to determine if software is up-to-date and performing as expected.\n",
+        "d. All servers must be set up to run the real-time scanner, scanning files written to disk.\n",
+        "e. Report all virus infections to the help desk supporting your location. Send email notification to IT Security & Compliance.\n",
+        "f. Workstations must be configured to run the real-time scanner, scanning at least files written to disk.\n",
+        "g. All removable media, regardless of where it comes from, must be scanned for viruses before it is used. This includes but is not limited to; demonstration software, shrink wrapped software, diskettes/CDs/DVDs, USB storage devices, digital cameras, or any other device that contains files that are added or inserted into a computer system.\n",
+        "h. Digital media intended for mass distribution must be validated to be free from viruses prior to distribution.\n",
+        "i. Following the repair of a computer system, the equipment must be validated to be free from viruses before it’s connected to the network.\n",
+        "j. Business critical, important or sensitive data files must be stored on network drives.\n",
+        "k. Users should be prevented from modifying executable files on servers. This aids in preventing a user’s workstation from infecting a file server.\n",
+        "l. Infected systems must be promptly removed from the network and thereafter an engineer will deep scan the system.\n",
+        "m. During office hours, no one may unplug their system to support System scanning activity. If so, then they will be solely responsible for data loss due to a VIRUS. (Based upon failure, the IT department will generate a periodic report of this and share with the respective HOD)."
+      ]
+    }
+    
+    
+    
+    
+  ]
+}
